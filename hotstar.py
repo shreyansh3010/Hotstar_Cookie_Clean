@@ -4,7 +4,7 @@ from selenium import webdriver
 from threading import Timer
 def magic():
     os.system("taskkill /f /im "+"chrome.exe")
-    url1 = "" #matchurl
+    url1 = "" #Full match url
     driver = webdriver.Chrome(executable_path='./chromedriver.exe')
     driver.get(url1)
     driver.delete_all_cookies()
